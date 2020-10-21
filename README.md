@@ -1,0 +1,2 @@
+# yaerk-template
+Шаблон ЯЭРК
