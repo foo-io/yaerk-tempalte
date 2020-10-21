@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Новости</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+<body>
+
+    <!-- @@name - Заголовок страницы -->
+
+<header>
+
+    <div class="h-desktop hide-for-small-only">
+        <div class="header__top">
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+
+                    <div class="header__top-content">
+                        <div class="header__top-left">
+                            АО «Якутская Энергоремонтная Компания»
+                        </div>
+                        <div class="header__top-right">
+                            <a href="#lk" class="header__top-lk">
+                                <svg class="svg-user-dims">
+                                    <use xlink:href="./img/icons/sprite.svg#user"></use>
+                                </svg>
+                                Личный кабинет
+                            </a>
+                            <button class="header__top-search" data-toggle="search-desktop">
+                                <svg class="svg-search-dims">
+                                    <use xlink:href="./img/icons/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header__middle">
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+
+                    <div class="header__middle-content">
+                        <div class="header__middle-left">
+                            <a href="index.html" class="header__middle-logo" title="АО «Якутская Энергоремонтная Компания»">
+                                <img src="../img/header/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="header__middle-right">
+                            <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                    <a href="about.html">О компании</a>
+                                    <ul class="menu">
+                                        <li><a href="about.leadership.html">Руководство</a></li>
+                                        <li class="is-active"><a href="about.reqs.html">Реквизиты</a></li>
+                                        <li><a href="about.contacts.html">Контакты</a></li>
+                                        <li><a href="about.feedback.html">Обратная связь</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="about.html">Потребителям</a>
+                                    <ul class="menu">
+                                        <li data-da="js-header-more,688"><a href="about.html">Тарифы</a></li>
+                                        <li data-da="js-header-more,688"><a href="#">Техприсоединение</a></li>
+                                        <li data-da="js-header-more,688"><a href="#">Информация</a></li>
+                                        <li data-da="js-header-more,688"><a href="#">Личный кабинет</a></li>
+                                        <li data-da="js-header-more,688"><a href="info.faq.html">Частые вопросы</a></li>
+                                    </ul>
+                                </li>
+                                <li data-da="js-header-more,708"><a href="news.html">Новости</a></li>
+                                <li data-da="js-header-more,804"><a href="about.vacancies.html">Вакансии</a></li>
+                                <li class="hide-for-medium-only">
+                                    <a href="info.html">Раскрытие информации</a>
+                                    <ul class="menu">
+                                        <li data-da="js-header-more,1024"><a href="info.html">Акционерам</a></li>
+                                    </ul>
+                                </li>
+                                <li data-da="js-header-more,1050"><a href="about.contacts.html">Контакты</a></li>
+                                <li class="show-for-medium hide-for-large">
+                                    <a href="#more">Ещё</a>
+                                    <ul class="menu js-header-more"></ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-pane search-desktop" id="search-desktop" data-dropdown data-auto-focus="true">
+
+            <div class="grid-container">
+
+                <div class="search-desktop__panel">
+                    <a href="index.html" class="search-desktop__panel-logo" title="АО «Якутская Энергоремонтная Компания»">
+                        <img src="../img/header/logo.png" alt="logo">
+                    </a>
+
+                    <form action="search.html" method="get" class="search-desktop__form">
+                        <button type="submit" name="button">
+                            <svg class="svg-search-desktop-dims">
+                                <use xlink:href="./img/icons/sprite.svg#search-desktop"></use>
+                            </svg>
+                        </button>
+                        <input type="text" name="search" value="" placeholder="Что Вы хотите найти?">
+                        <button name="close" class="js-close-search-desktop">
+                            <svg class="svg-close-desktop-dims">
+                                <use xlink:href="./img/icons/sprite.svg#close-desktop"></use>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <div class="search-desktop__quick">
+                        <div class="search-desktop__quick-title">Быстрые ссылки</div>
+                        <div class="search-desktop__quick-list">
+                            <a href="#">Тарифы</a>
+                            <a href="#">Задолженность за электроэнергию</a>
+                            <a href="#">Информация для потребителей</a>
+                            <a href="#">График работы</a>
+                            <a href="#">Документация</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="h-mobile show-for-small-only">
+        <div class="header__mobile">
+            <a href="index.html" class="header__mobile-logo" title="АО «Якутская Энергоремонтная Компания»">
+                <img src="../img/header/logo.png" alt="logo">
+            </a>
+            <div class="header__mobile-buttons">
+                <a href="#login" class="header__mobile-button">
+                    <svg class="svg-user-mobile-dims">
+                        <use xlink:href="./img/icons/sprite.svg#user-mobile"></use>
+                    </svg>
+                </a>
+                <button class="header__mobile-button js-hamburger-button" data-toggle="mobile-menu">
+                    <svg class="svg-burger-dims mobile-menu__burger-open">
+                        <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                    </svg>
+                    <svg class="svg-close-dims mobile-menu__burger-close" style="display: none;">
+                        <use xlink:href="./img/icons/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown-pane mobile-menu" id="mobile-menu" data-dropdown data-auto-focus="true">
+
+            <ul class="vertical menu accordion-menu mobile-menu__accordion" data-accordion-menu>
+                <li>
+                    <a href="#">Потребителям</a>
+                    <ul class="menu vertical">
+                        <li><a href="#">Тарифы</a></li>
+                        <li><a href="#">Техприсоединение</a></li>
+                        <li><a href="#">Информация</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ЯЭРК</a>
+                    <ul class="menu vertical">
+                        <li><a href="about.leadership.html">Руководство</a></li>
+                        <li><a href="#">Объявления</a></li>
+                        <li><a href="about.vacancies.html">Вакансии</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="about.reqs.html">Реквизиты</a></li>
+                        <li><a href="about.contacts.html">Контакты</a></li>
+                        <li><a href="about.feedback.html">Обратная связь</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="info.html">Раскрытие информации</a>
+                    <ul class="menu vertical">
+                        <li><a href="info.html">Акционерам</a></li>
+                        <li><a href="#">Передача электроэнергии</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search__form">
+                <form action="search.html" method="get">
+                    <input type="text" name="search" value="" placeholder="Поиск на сайте...">
+                    <button type="submit">
+                        <svg class="svg-search-dims">
+                            <use xlink:href="./img/icons/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main>
+
+        <!-- Хлебные крошки -->
+        <div class="page-breadcrumbs">
+    <div class="grid-container">
+        <nav role="navigation">
+            <ul class="breadcrumbs">
+                
+                    <li><a href="./index.html">Главная</a></li>
+                
+                    <li><a href="./news.html">Новости</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+        <!-- Заголовок страницы -->
+        <div class="page-header">
+    <div class="grid-container">
+        <h1>Новости</h1>
+    </div>
+</div>
+
+
+        <!-- Навигация -->
+        <div class="page-navigation">
+    <div class="grid-container">
+
+        <ul class="menu grid-x grid-margin-x">
+            
+                <li class="is-active"><a href="./news.html">Новости</a></li>
+            
+                <li class=""><a href="#">Объявления</a></li>
+            
+        </ul>
+
+    </div>
+</div>
+
+
+        <div class="page-selector">
+            <div class="grid-container">
+                <div class="selector">
+                    <div class="selector__text">
+                        Сортировка:
+                    </div>
+                    <div class="custom-select" style="width:200px;">
+                        <select>
+                            <option value="0">Выберите</option>
+                            <option value="1">Сначала свежие</option>
+                            <option value="2">Сначала старые</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content m-background-grey">
+            <div class="grid-container">
+                <div class="news">
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/600x300/" alt=""> -->
+                                <img src="img/news/post1.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    Якутскэнерго завершило капитальный ремонт системообразующей линии «Майя – Чурапча»
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/800x600/" alt=""> -->
+                                <img src="img/news/post2.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    График ремонтных работ энергетиков на период с 29 сентября по 12 октября
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/300x150/" alt=""> -->
+                                <img src="img/news/post3.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    Теплоэнергосервис подключает социально значимых потребителей к источникам централизованного теплоснабжения
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/800x600/" alt=""> -->
+                                <img src="img/news/post2.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    График ремонтных работ энергетиков на период с 29 сентября по 12 октября
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/300x150/" alt=""> -->
+                                <img src="img/news/post3.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    Теплоэнергосервис подключает социально значимых потребителей к источникам централизованного теплоснабжения
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/600x300/" alt=""> -->
+                                <img src="img/news/post1.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    Якутскэнерго завершило капитальный ремонт системообразующей линии «Майя – Чурапча»
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="main-button">
+    <a href="news.html">Загрузить ещё</a>
+</div>
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+    <div class="grid-container hide-for-small-only">
+        <div class="grid-x grid-margin-x align-justify">
+
+            <div class="cell large-3 medium-3 small-12">
+                <div class="footer__contact">
+                    <h3>АО «Якутская Энергоремонтная Компания»</h3>
+                    <div class="footer__contact-item">
+                        677004 Якутск, ул. Кржижановского, 2, 1 этаж
+                    </div>
+                    <div class="footer__contact-item">
+                        <a href="mailto:yaerk@yakutskenergo.ru?subject=feedback">yaerk@yakutskenergo.ru</a>
+                        +7 (4112) 49‒30‒91  пн-пт 9:00-17:00
+                    </div>
+                </div>
+                <div class="footer__search search__form" data-da="js-company,640,first">
+                    <form action="search.html" method="get">
+                        <input type="text" name="search" value="" placeholder="Поиск на сайте...">
+                        <button type="submit">
+                            <svg class="svg-search-dims">
+                                <use xlink:href="./img/icons/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <a class="footer__line" data-da="js-company,640">
+                    <img src="./img/footer/mini-logo.png" alt="logo">
+                    <div class="footer__line-title">Линия доверия</div>
+                </a>
+            </div>
+            <div class="cell large-7 medium-9 small-12">
+                <div class="grid-x grid-margin-x">
+                    <div class="cell large-4 medium-4">
+                        <div class="footer__menu">
+                            <div class="footer__menu-title">Потребителям</div>
+                            <ul class="footer__menu-list">
+                                <li><a href="#">Тарифы</a></li>
+                                <li><a href="#">Техприсоединение</a></li>
+                                <li><a href="#">Информация</a></li>
+                                <li><a href="#">Личный кабинет</a></li>
+                                <li><a href="info.faq.html">Частые вопросы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cell large-4 medium-4">
+                        <div class="footer__menu">
+                            <div class="footer__menu-title">ЯЭРК</div>
+                            <ul class="footer__menu-list">
+                                <li><a href="about.leadership.html">Руководство</a></li>
+                                <li><a href="#">Объявления</a></li>
+                                <li><a href="about.vacancies.html">Вакансии</a></li>
+                                <li><a href="news.html">Новости</a></li>
+                                <li><a href="about.reqs.html">Реквизиты</a></li>
+                                <li><a href="about.contacts.html">Контакты</a></li>
+                                <li><a href="about.feedback.html">Обратная связь</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cell large-4 medium-4">
+                        <div class="footer__menu">
+                            <div class="footer__menu-title">Раскрытие информации</div>
+                            <ul class="footer__menu-list">
+                                <li><a href="info.html">Акционерам</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="company" data-da="js-company,640">
+            <div class="company__item">
+                © 2020 АО «Якутская Энергоремонтная Компания»
+            </div>
+            <div class="company__item">
+                <a href="https://platforma.bz">
+                    Разработано в
+                    <svg class="svg-platforma-dims">
+                        <use xlink:href="./img/icons/sprite.svg#platforma"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__mobile show-for-small-only">
+        <ul class="vertical menu accordion-menu mobile-menu__accordion" data-accordion-menu>
+            <li>
+                <a href="#">Потребителям</a>
+                <ul class="menu vertical">
+                    <li><a href="#">Тарифы</a></li>
+                    <li><a href="#">Техприсоединение</a></li>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Личный кабинет</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">ЯЭРК</a>
+                <ul class="menu vertical">
+                    <li><a href="about.leadership.html">Руководство</a></li>
+                    <li><a href="#">Объявления</a></li>
+                    <li><a href="about.vacancies.html">Вакансии</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="about.reqs.html">Реквизиты</a></li>
+                    <li><a href="about.contacts.html">Контакты</a></li>
+                    <li><a href="about.feedback.html">Обратная связь</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Раскрытие информации</a>
+                <ul class="menu vertical">
+                    <li><a href="info.html">Акционерам</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="grid-container">
+            <div class="js-company"></div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/dynamic-adapt.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/imask.min.js"></script>
+<script src="//yastatic.net/share2/share.js"></script>
+<script src="js/app.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+
+
+</body>
+</html>

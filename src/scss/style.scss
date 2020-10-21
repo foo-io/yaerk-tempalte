@@ -1,0 +1,119 @@
+// default colors
+$b: #0066A6;
+$o: #E66A25;
+$w: #FFFFFF;
+$ee: #707D96;
+$bg: #EBF5FC;
+
+// import foundation && normalize
+@import 'foundation';
+
+@import 'fonts';
+@import 'icons';
+@import 'header';
+@import 'footer';
+@import 'breadcrumbs';
+@import 'page';
+@import 'about';
+@import 'card';
+@import 'info';
+@import 'document';
+@import 'partners';
+@import 'faq';
+@import 'notice';
+@import 'sliders.core';
+@import 'sliders.theme';
+@import 'sliders';
+@import 'news';
+@import 'selector';
+@import 'feedback';
+
+// SCSS Codes here...
+html {
+    min-width: 320px;
+}
+main {
+    background: #EBF5FC;
+
+    section {
+        margin-bottom: 64px;
+
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 64px;
+        }
+        @media screen and (max-width: 39.99875em) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.main-title {
+    margin-bottom: 32px;
+
+    h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 39px;
+        color: #575F73;
+        margin-bottom: 0;
+
+        @media screen and (max-width: 39.99875em) {
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #3D4961;
+        }
+    }
+}
+.main-button {
+    background: #FFF;
+    border-radius: 5px;
+    margin-top: 32px;
+
+    a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0066A6;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+        transition: color .2s ease-out;
+
+        &:hover {
+            color: $o;
+        }
+    }
+
+    @media screen and (max-width: 39.99875em) {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 64rem) {
+    .grid-container {
+        max-width: 55rem;
+    }
+}
+@media screen and (max-width: 39.99875em) {
+    main {
+        background: #FFF;
+    }
+    .page-header {
+        background: #F4F6FA;
+    }
+    .page-breadcrumbs {
+        background: #F4F6FA;
+    }
+    .page-selector {
+        background: #F4F6FA;
+    }
+    .m-background-grey {
+        background: #F4F6FA;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    @@include('template.head.html', {
+        title: 'Акционерам'
+    })
+
+<body>
+
+    @@include('template.header.html')
+
+    <main>
+
+        <!-- Хлебные крошки -->
+        @@include('template.breadcrumbs.html', {
+            arr: [
+                { title: "Главная", link: './index.html' },
+                { title: "Раскрытие информации", link: './info.html' },
+                { title: "Акционерам", link: './info.html' }
+            ]
+        })
+
+        <!-- Заголовок страницы -->
+        @@include('template.page.title.html', {
+            title: 'Раскрытие информации'
+        })
+
+        <!-- Навигация -->
+        @@include('template.page.nav.html', {
+            arr: [
+                { title: "Акционерам", link: './info.html', class: 'is-active' }
+            ]
+        })
+
+        <div class="page-content">
+            <div class="grid-container">
+                <div class="page-main">
+
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell large-6 medium-12 small-12">
+                            <ul class="vertical menu accordion-menu accordion-holders" data-accordion-menu>
+                                <li><a href="#">Акции</a></li>
+                                <li>
+                                    <a href="#">Раскрытие информации</a>
+                                    <ul class="menu vertical nested is-active">
+                                        <li><a href="info.holders.html">Собрание акционеров</a></li>
+                                        <li><a href="#">Список аффилированных лиц</a></li>
+                                        <li><a href="//jzxworld.ru/docs/Предложение_о_размере_цен_тарифов_на_2021.PDF">Раскрытие информации субъектом рынка электроэнергии</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Регламентирующие документы</a>
+                                    <ul class="menu vertical nested">
+                                        <li><a href="#">Устав ПАО «Якутскэнерго»</a></li>
+                                        <li><a href="#">Внутренние документы, регулирующие деятельность органов управления</a></li>
+                                        <li><a href="#">Учредительные документы</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Аудитор</a></li>
+                                <li><a href="#">Предоставление информации акционерам</a></li>
+                                <li><a href="#">Контакты для акционеров</a></li>
+                                <li><a href="#">Финансовая отчетность</a></li>
+                                <li><a href="#">Корпоративное управление</a></li>
+                                <li><a href="info.faq.html">Часто задаваемые вопросы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('template.footer.html')
+
+</body>
+</html>

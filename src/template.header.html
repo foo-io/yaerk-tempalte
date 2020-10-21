@@ -1,0 +1,191 @@
+<!-- @@name - Заголовок страницы -->
+
+<header>
+
+    <div class="h-desktop hide-for-small-only">
+        <div class="header__top">
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+
+                    <div class="header__top-content">
+                        <div class="header__top-left">
+                            АО «Якутская Энергоремонтная Компания»
+                        </div>
+                        <div class="header__top-right">
+                            <a href="#lk" class="header__top-lk">
+                                <svg class="svg-user-dims">
+                                    <use xlink:href="./img/icons/sprite.svg#user"></use>
+                                </svg>
+                                Личный кабинет
+                            </a>
+                            <button class="header__top-search" data-toggle="search-desktop">
+                                <svg class="svg-search-dims">
+                                    <use xlink:href="./img/icons/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header__middle">
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+
+                    <div class="header__middle-content">
+                        <div class="header__middle-left">
+                            <a href="index.html" class="header__middle-logo" title="АО «Якутская Энергоремонтная Компания»">
+                                <img src="../img/header/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="header__middle-right">
+                            <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                    <a href="about.html">О компании</a>
+                                    <ul class="menu">
+                                        <li><a href="about.leadership.html">Руководство</a></li>
+                                        <li class="is-active"><a href="about.reqs.html">Реквизиты</a></li>
+                                        <li><a href="about.contacts.html">Контакты</a></li>
+                                        <li><a href="about.feedback.html">Обратная связь</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="about.html">Потребителям</a>
+                                    <ul class="menu">
+                                        <li data-da="js-header-more,688"><a href="about.html">Тарифы</a></li>
+                                        <li data-da="js-header-more,688"><a href="#">Техприсоединение</a></li>
+                                        <li data-da="js-header-more,688"><a href="#">Информация</a></li>
+                                        <li data-da="js-header-more,688"><a href="#">Личный кабинет</a></li>
+                                        <li data-da="js-header-more,688"><a href="info.faq.html">Частые вопросы</a></li>
+                                    </ul>
+                                </li>
+                                <li data-da="js-header-more,708"><a href="news.html">Новости</a></li>
+                                <li data-da="js-header-more,804"><a href="about.vacancies.html">Вакансии</a></li>
+                                <li class="hide-for-medium-only">
+                                    <a href="info.html">Раскрытие информации</a>
+                                    <ul class="menu">
+                                        <li data-da="js-header-more,1024"><a href="info.html">Акционерам</a></li>
+                                    </ul>
+                                </li>
+                                <li data-da="js-header-more,1050"><a href="about.contacts.html">Контакты</a></li>
+                                <li class="show-for-medium hide-for-large">
+                                    <a href="#more">Ещё</a>
+                                    <ul class="menu js-header-more"></ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-pane search-desktop" id="search-desktop" data-dropdown data-auto-focus="true">
+
+            <div class="grid-container">
+
+                <div class="search-desktop__panel">
+                    <a href="index.html" class="search-desktop__panel-logo" title="АО «Якутская Энергоремонтная Компания»">
+                        <img src="../img/header/logo.png" alt="logo">
+                    </a>
+
+                    <form action="search.html" method="get" class="search-desktop__form">
+                        <button type="submit" name="button">
+                            <svg class="svg-search-desktop-dims">
+                                <use xlink:href="./img/icons/sprite.svg#search-desktop"></use>
+                            </svg>
+                        </button>
+                        <input type="text" name="search" value="" placeholder="Что Вы хотите найти?">
+                        <button name="close" class="js-close-search-desktop">
+                            <svg class="svg-close-desktop-dims">
+                                <use xlink:href="./img/icons/sprite.svg#close-desktop"></use>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <div class="search-desktop__quick">
+                        <div class="search-desktop__quick-title">Быстрые ссылки</div>
+                        <div class="search-desktop__quick-list">
+                            <a href="#">Тарифы</a>
+                            <a href="#">Задолженность за электроэнергию</a>
+                            <a href="#">Информация для потребителей</a>
+                            <a href="#">График работы</a>
+                            <a href="#">Документация</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="h-mobile show-for-small-only">
+        <div class="header__mobile">
+            <a href="index.html" class="header__mobile-logo" title="АО «Якутская Энергоремонтная Компания»">
+                <img src="../img/header/logo.png" alt="logo">
+            </a>
+            <div class="header__mobile-buttons">
+                <a href="#login" class="header__mobile-button">
+                    <svg class="svg-user-mobile-dims">
+                        <use xlink:href="./img/icons/sprite.svg#user-mobile"></use>
+                    </svg>
+                </a>
+                <button class="header__mobile-button js-hamburger-button" data-toggle="mobile-menu">
+                    <svg class="svg-burger-dims mobile-menu__burger-open">
+                        <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                    </svg>
+                    <svg class="svg-close-dims mobile-menu__burger-close" style="display: none;">
+                        <use xlink:href="./img/icons/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown-pane mobile-menu" id="mobile-menu" data-dropdown data-auto-focus="true">
+
+            <ul class="vertical menu accordion-menu mobile-menu__accordion" data-accordion-menu>
+                <li>
+                    <a href="#">Потребителям</a>
+                    <ul class="menu vertical">
+                        <li><a href="#">Тарифы</a></li>
+                        <li><a href="#">Техприсоединение</a></li>
+                        <li><a href="#">Информация</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ЯЭРК</a>
+                    <ul class="menu vertical">
+                        <li><a href="about.leadership.html">Руководство</a></li>
+                        <li><a href="#">Объявления</a></li>
+                        <li><a href="about.vacancies.html">Вакансии</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="about.reqs.html">Реквизиты</a></li>
+                        <li><a href="about.contacts.html">Контакты</a></li>
+                        <li><a href="about.feedback.html">Обратная связь</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="info.html">Раскрытие информации</a>
+                    <ul class="menu vertical">
+                        <li><a href="info.html">Акционерам</a></li>
+                        <li><a href="#">Передача электроэнергии</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search__form">
+                <form action="search.html" method="get">
+                    <input type="text" name="search" value="" placeholder="Поиск на сайте...">
+                    <button type="submit">
+                        <svg class="svg-search-dims">
+                            <use xlink:href="./img/icons/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>

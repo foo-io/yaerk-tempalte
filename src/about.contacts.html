@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    @@include('template.head.html', {
+        title: 'О компании'
+    })
+
+<body>
+
+    @@include('template.header.html', {
+        name: 'Заголовок страницы'
+    })
+
+    <main>
+
+        <!-- Хлебные крошки -->
+        @@include('template.breadcrumbs.html', {
+            arr: [
+                { title: "Главная", link: './index.html' },
+                { title: "О компании", link: './about.html' }
+            ]
+        })
+
+        <!-- Заголовок страницы -->
+        @@include('template.page.title.html', {
+            title: 'О компании'
+        })
+
+        <!-- Навигация -->
+        @@include('template.page.nav.html', {
+            arr: [
+                { title: "О компании", link: './about.html', class: '' },
+                { title: "Руководство", link: './about.leadership.html', class: ''},
+                { title: "Вакансии", link: './about.vacancies.html', class: '' },
+                { title: "Реквизиты", link: './about.reqs.html', class: '' },
+                { title: "Контакты", link: './about.contacts.html', class: 'is-active' },
+                { title: "Обратная связь", link: './about.feedback.html', class: '' }
+            ]
+        })
+
+        <div class="page-content">
+            <div class="grid-container">
+                <div class="page-main">
+                    <h2 class="page-main__title">Контакты</h2>
+
+                    <div class="about-contact">
+                        <p>
+                            ул. Кржижановского, 2, Якутск, Респ. Саха (Якутия), 677004
+                        </p>
+
+                        <a href="mailto:yaerk@yakutskenergo.ru">yaerk@yakutskenergo.ru</a>
+
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell large-4 medium-6 small-12">
+                                <ul class="about-contact__list">
+                                    <li><b>По всем вопросам:</b> 8 (411) 249-30-91</li>
+                                    <li><b>Бухгалтерия:</b> 8 (411) 249-30-91</li>
+                                    <li><b>Договорной отдел:</b> 8 (411) 249-30-91</li>
+                                </ul>
+                            </div>
+                            <div class="cell large-4 medium-4 small-12">
+                                <ul class="about-contact__list">
+                                    <li>9:00 - 18:00</li>
+                                    <li>Обед: 13:00 - 14:00</li>
+                                    <li>Выходные: Сб, Вс.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container" style="margin-top: 16px;">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5b4e149146b69e2b5a861f5cb06a3816d3ec93615f02e6488b9d05e486f339b1&amp;source=constructor" width="100%" height="400" frameborder="0" style="border-radius: 5px; overflow: hidden;"></iframe>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('template.footer.html')
+
+</body>
+</html>

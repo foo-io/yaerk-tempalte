@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    @@include('template.head.html', {
+        title: 'О компании'
+    })
+
+<body>
+
+    @@include('template.header.html', {
+        name: 'Заголовок страницы'
+    })
+
+    <main>
+
+        <!-- Хлебные крошки -->
+        @@include('template.breadcrumbs.html', {
+            arr: [
+                { title: "Главная", link: './index.html' },
+                { title: "О компании", link: './about.html' }
+            ]
+        })
+
+        <!-- Заголовок страницы -->
+        @@include('template.page.title.html', {
+            title: 'О компании'
+        })
+
+        <!-- Навигация -->
+        @@include('template.page.nav.html', {
+            arr: [
+                { title: "О компании", link: './about.html', class: '' },
+                { title: "Руководство", link: './about.leadership.html', class: 'is-active'},
+                { title: "Вакансии", link: './about.vacancies.html', class: '' },
+                { title: "Реквизиты", link: './about.reqs.html', class: '' },
+                { title: "Контакты", link: './about.contacts.html', class: '' },
+                { title: "Обратная связь", link: './about.feedback.html', class: '' }
+            ]
+        })
+
+        <div class="page-content">
+            <div class="grid-container">
+                <div class="page-main">
+                    <h2 class="page-main__title">Руководство</h2>
+
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell large-6 medium-6 small-12">
+                            <div class="about-lead">
+                                <div class="about-lead__image">
+                                    <img src="img/about/lead1.png" alt="">
+                                </div>
+                                <div class="about-lead__name">
+                                    <h2>
+                                        Дедюхин Александр Владимирович
+                                    </h2>
+                                    <div class="about-lead__position">
+                                        Генеральный директор АО «ЯЭРК»
+                                    </div>
+                                </div>
+                                <div class="about-lead__information">
+                                    <div class="about-lead__title">
+                                        Образование
+                                    </div>
+                                    <div class="about-lead__text">
+                                        На Якутской ГРЭС специалисты ЯЭРК продолжают капитальный ремонт ГТУ-7, включающий в себя, в том числе, восстановление рабочих и направляющих лопаток турбины, отработавших свой ресурс. «После выработки основного ресурса лопатки могут быть восстановлены дважды, что значительно продлевает ресурс турбины и экономит средства на изготовление новых», - рассказал главный инженер АО «ЯЭРК» Леонид Головченко. После окончания работ на ГТУ-7 в плановый ремонт до октября будет выведена ГТУ-2.
+                                    </div>
+                                </div>
+                                <div class="about-lead__information">
+                                    <div class="about-lead__title">
+                                        Карьера
+                                    </div>
+                                    <div class="about-lead__text">
+                                        На Якутской ГРЭС специалисты ЯЭРК продолжают капитальный ремонт ГТУ-7, включающий в себя, в том числе, восстановление рабочих и направляющих лопаток турбины, отработавших свой ресурс. «После выработки основного ресурса лопатки могут быть восстановлены дважды, что значительно продлевает ресурс турбины и экономит средства на изготовление новых», - рассказал главный инженер АО «ЯЭРК» Леонид Головченко. После окончания работ на ГТУ-7 в плановый ремонт до октября будет выведена ГТУ-2.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell large-6 medium-6 small-12">
+                            <div class="about-lead">
+                                <div class="about-lead__image">
+                                    <img src="img/about/lead2.png" alt="">
+                                </div>
+                                <div class="about-lead__name">
+                                    <h2>
+                                        Леонид Головченко
+                                    </h2>
+                                    <div class="about-lead__position">
+                                        Главный инженер АО «ЯЭРК»
+                                    </div>
+                                </div>
+                                <div class="about-lead__information">
+                                    <div class="about-lead__title">
+                                        Образование
+                                    </div>
+                                    <div class="about-lead__text">
+                                        На Якутской ГРЭС специалисты ЯЭРК продолжают капитальный ремонт ГТУ-7, включающий в себя, в том числе, восстановление рабочих и направляющих лопаток турбины, отработавших свой ресурс. «После выработки основного ресурса лопатки могут быть восстановлены дважды, что значительно продлевает ресурс турбины и экономит средства на изготовление новых», - рассказал главный инженер АО «ЯЭРК» Леонид Головченко. После окончания работ на ГТУ-7 в плановый ремонт до октября будет выведена ГТУ-2.
+                                    </div>
+                                </div>
+                                <div class="about-lead__information">
+                                    <div class="about-lead__title">
+                                        Карьера
+                                    </div>
+                                    <div class="about-lead__text">
+                                        На Якутской ГРЭС специалисты ЯЭРК продолжают капитальный ремонт ГТУ-7, включающий в себя, в том числе, восстановление рабочих и направляющих лопаток турбины, отработавших свой ресурс. «После выработки основного ресурса лопатки могут быть восстановлены дважды, что значительно продлевает ресурс турбины и экономит средства на изготовление новых», - рассказал главный инженер АО «ЯЭРК» Леонид Головченко. После окончания работ на ГТУ-7 в плановый ремонт до октября будет выведена ГТУ-2.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('template.footer.html')
+
+</body>
+</html>

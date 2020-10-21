@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    @@include('template.head.html', {
+        title: 'Обратная связь'
+    })
+
+<body>
+
+    @@include('template.header.html', {
+        name: 'Заголовок страницы'
+    })
+
+    <main>
+
+        <!-- Хлебные крошки -->
+        @@include('template.breadcrumbs.html', {
+            arr: [
+                { title: "Главная", link: './index.html' },
+                { title: "О компании", link: './about.html' }
+            ]
+        })
+
+        <!-- Заголовок страницы -->
+        @@include('template.page.title.html', {
+            title: 'О компании'
+        })
+
+        <!-- Навигация -->
+        @@include('template.page.nav.html', {
+            arr: [
+                { title: "О компании", link: './about.html', class: '' },
+                { title: "Руководство", link: './about.leadership.html', class: ''},
+                { title: "Вакансии", link: './about.vacancies.html', class: '' },
+                { title: "Реквизиты", link: './about.reqs.html', class: '' },
+                { title: "Контакты", link: './about.contacts.html', class: '' },
+                { title: "Обратная связь", link: './about.feedback.html', class: 'is-active' }
+            ]
+        })
+
+        <div class="page-content ">
+            <div class="grid-container">
+                <div class="page-main">
+                    <h2 class="page-main__title">Обратная связь</h2>
+
+                    <form action="#" method="post" class="feedback__form">
+                        <div class="grid-x grid-margin-x">
+
+                            <div class="cell large-3 medium-4 small-12">
+                                <label for="name">ФИО</label>
+                                <input type="text" name="name" id="name" value="" placeholder="Фамилия Имя Отчество">
+                            </div>
+                            <div class="cell large-3 medium-4 small-12">
+                                <label for="phone">Телефон</label>
+                                <input type="text" name="phone" id="phone" value="" placeholder="+7 (000) 000-00-00">
+                            </div>
+                            <div class="cell large-3 medium-4 small-12">
+                                <label for="email">Электронная почта</label>
+                                <input type="email" name="email" id="email" value="" placeholder="ivanovivan@mail.ru">
+                            </div>
+                            <div class="cell large-9 medium-12 small-12">
+                                <label for="text">Обращение</label>
+                                <textarea name="text" id="text" rows="8" cols="80" placeholder="Постарайтесь кратко изложить суть вашего обращения"></textarea>
+                            </div>
+                            <div class="cell large-9 medium-12 small-12 text-right">
+                                <button type="submit" name="button" class="button">Отправить</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('template.footer.html')
+
+</body>
+</html>

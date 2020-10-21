@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    @@include('template.head.html', {
+        title: 'Новости'
+    })
+
+<body>
+
+    @@include('template.header.html')
+
+    <main>
+
+        <!-- Хлебные крошки -->
+        @@include('template.breadcrumbs.html', {
+            arr: [
+                { title: "Главная", link: './index.html' },
+                { title: "Новости", link: './news.html' }
+            ]
+        })
+
+        <!-- Заголовок страницы -->
+        @@include('template.page.title.html', {
+            title: 'Новости'
+        })
+
+        <!-- Навигация -->
+        @@include('template.page.nav.html', {
+            arr: [
+                { title: "Новости", link: './news.html', class: 'is-active' },
+                { title: "Объявления", link: '#', class: '' }
+            ]
+        })
+
+        <div class="page-content">
+            <div class="grid-container">
+                <div class="page-main">
+                    <div class="page-single">
+
+                        <!-- Вернуться -->
+                        @@include('template.goback.html', {
+                            link: 'news.html'
+                        })
+
+                        <div class="news-page__image">
+                            <img src="img/news/image1.png" alt="Теплоэнергосервис проведет акцию по списанию пени">
+                        </div>
+
+                        @@include('template.news.title.html', {
+                            date: '29.09.2020',
+                            title: 'Теплоэнергосервис проведет акцию по списанию пени'
+                        })
+
+                        <div class="news-page__text">
+                            <p>
+                                <b>Теплоэнергосервис (дочернее предприятие Якутскэнерго, Группы РусГидро) информирует потребителей о проведении акции по списанию пени.</b>
+                            </p>
+
+                            <p>
+                                Напомним, в соответствии с Постановлением Правительства РФ №424 от 2 апреля 2020 года приостановлено начисление пени за несвоевременную оплату коммунальных услуг. «Мораторий» охватывает период с 1 апреля 2020 года до 1 января 2021 года.
+                            </p>
+                            <p>
+                                В дополнение к данному Постановлению Теплоэнергосервис проведет с 1 по 31 октября 2020 г. акцию по списанию пени, начисленных потребителям-гражданам в период до 1 апреля 2020 года.
+                            </p>
+                            <p>
+                                Для того, чтобы аннулировать пени, образовавшиеся до 1 апреля текущего года, потребителям предлагается направить в участки сбыта филиалов Теплоэнергосервиса по месту жительства:
+                            </p>
+                            <p>
+                                - заявление с приложенной копией паспорта или водительского удостоверения, СНИЛС или ИНН;
+                            </p>
+                            <p>
+                                - документ, подтверждающий право на жилое помещение (выписку из ЕГРН, свидетельство о регистрации права, договор социального найма и т.п.).
+                            </p>
+                            <p>
+                                В заявлении необходимо указать точный адрес, фамилию, имя, отчество собственника жилья, контактные данные (номер мобильного телефона, электронный адрес), место работы.
+                            </p>
+                            <p>
+                                Заявление можно направлять дистанционно на электронный адрес: sbyt@tes.yakutskenergo.ru.
+                            </p>
+                            <p>
+                                Граждане, которые испытывают трудности с единовременным погашением задолженности, могут заключить соглашение о рассрочке оплаты долга. Теплоэнергосервис идет навстречу клиентам, оказавшимся в силу различным жизненных обстоятельств в непростых финансовых условиях, рассматривая возможность индивидуального графика погашения долгов.
+                            </p>
+                            <p>
+                                Данные меры направлены, в первую очередь, на поддержку самых уязвимых категорий населения и не освобождают потребителей от оплаты коммунальных услуг. Теплоэнергосервис призывает клиентов своевременно рассчитываться за потребленные свет и тепло.
+                            </p>
+                        </div>
+
+                        @@include('template.social.html')
+
+                        <div class="gallery">
+                            <div class="gallery__title hide-for-small-only">
+                                Галерея
+                            </div>
+                            <div class="gallery__items">
+                                <div class="gallery__items-main owl-carousel" id="sync1">
+                                    <div class="gallery__item">
+                                        <img src="//via.placeholder.com/800x400/" alt="">
+                                    </div>
+                                    <div class="gallery__item">
+                                        <img src="//via.placeholder.com/800x400/" alt="">
+                                    </div>
+                                    <div class="gallery__item">
+                                        <img src="//via.placeholder.com/800x400/" alt="">
+                                    </div>
+                                    <div class="gallery__item">
+                                        <img src="//via.placeholder.com/800x400/" alt="">
+                                    </div>
+                                </div>
+                                <div class="gallery__items-thumb owl-carousel" id="sync2">
+                                    <div class="gallery__item">
+                                        <img src="//via.placeholder.com/800x400/" alt="">
+                                    </div>
+                                    <div class="gallery__item">
+                                        <img src="//via.placeholder.com/800x400/" alt="">
+                                    </div>
+                                    <div class="gallery__item">
+                                        <img src="//via.placeholder.com/800x400/" alt="">
+                                    </div>
+                                    <div class="gallery__item">
+                                        <img src="//via.placeholder.com/800x400/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('template.footer.html')
+
+</body>
+</html>

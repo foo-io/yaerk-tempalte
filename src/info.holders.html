@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    @@include('template.head.html', {
+        title: 'Собрание акционеров'
+    })
+
+<body>
+
+    @@include('template.header.html')
+
+    <main>
+
+        <!-- Хлебные крошки -->
+        @@include('template.breadcrumbs.html', {
+            arr: [
+                { title: "Главная", link: './index.html' },
+                { title: "Раскрытие информации", link: './info.html' },
+                { title: "Акционерам", link: './info.html' },
+                { title: "Собрание акционеров", link: './info.html' }
+            ]
+        })
+
+        <!-- Заголовок страницы -->
+        @@include('template.page.title.html', {
+            title: 'Раскрытие информации'
+        })
+
+        <!-- Навигация -->
+        @@include('template.page.nav.html', {
+            arr: [
+                { title: "Акционерам", link: './info.html', class: 'is-active' }
+            ]
+        })
+
+        <div class="page-content">
+            <div class="grid-container">
+                <div class="page-main">
+                    <div class="page-single">
+
+                        <!-- Вернуться -->
+                        @@include('template.goback.html', {
+                            link: 'info.html'
+                        })
+
+                        <div class="page-title">
+                            <h1>Собрание акционеров</h1>
+                        </div>
+
+                        <ul class="accordion accordion-custom" data-accordion>
+                            <li class="accordion-item is-active" data-accordion-item>
+                                <a href="#" class="accordion-title">ГОДОВОЕ ОБЩЕЕ СОБРАНИЕ АКЦИОНЕРОВ 2020 г.</a>
+
+                                <div class="accordion-content" data-tab-content>
+
+                                    <div class="document">
+                                        @@include('template.document.html', {
+                                            type: 'zip',
+                                            name: '03.06.2020 Отчет об итогах голосования на ГОСА ПАО "Якутскэнерго" 02.06.2020',
+                                            size: '4.03 Мб'
+                                        })
+                                        @@include('template.document.html', {
+                                            type: 'doc',
+                                            name: '03.06.2020 Протокол ГОСА ПАО «Якутскэнерго» №2 от 02.06.2020 с приложениями',
+                                            size: '5.1 Мб'
+                                        })
+                                        @@include('template.document.html', {
+                                            type: 'file',
+                                            name: '07.05.2020 Перечень материалов ГОСА 2020 для акционеров',
+                                            size: '5.1 Мб'
+                                        })
+                                        @@include('template.document.html', {
+                                            type: 'pdf',
+                                            name: 'годовая бухгалтерская (финансовая) отчетность за 2019 год, в том числе заключение аудитора Общества по результатам проверки годовой бухгалтерской (финансовой) отчетности;',
+                                            size: '5.1 Мб'
+                                        })
+                                        @@include('template.document.html', {
+                                            type: 'xls',
+                                            name: 'годовой отчет Общества за 2019 год; отчет о заключенных Обществом в 2019 году сделках, в совершении которых имеется заинтересованность (в составе годового отчета Общества за 2019 год);',
+                                            size: '5.1 Мб'
+                                        })
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title">ВНЕОЧЕРЕДНОЕ ОБЩЕЕ СОБРАНИЕ АКЦИОНЕРОВ 28.02.2020</a>
+
+                                <div class="accordion-content" data-tab-content>
+
+                                    <div class="document">
+                                        @@include('template.document.html', {
+                                            type: 'zip',
+                                            name: '03.06.2020 Отчет об итогах голосования на ГОСА ПАО "Якутскэнерго" 02.06.2020',
+                                            size: '4.03 Мб'
+                                        })
+                                        @@include('template.document.html', {
+                                            type: 'doc',
+                                            name: '03.06.2020 Протокол ГОСА ПАО «Якутскэнерго» №2 от 02.06.2020 с приложениями',
+                                            size: '5.1 Мб'
+                                        })
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title">ГОДОВОЕ ОБЩЕЕ СОБРАНИЕ АКЦИОНЕРОВ 2019 г.</a>
+
+                                <div class="accordion-content" data-tab-content>
+
+                                    <div class="document">
+                                        @@include('template.document.html', {
+                                            type: 'file',
+                                            name: '07.05.2020 Перечень материалов ГОСА 2020 для акционеров',
+                                            size: '5.1 Мб'
+                                        })
+                                        @@include('template.document.html', {
+                                            type: 'pdf',
+                                            name: 'годовая бухгалтерская (финансовая) отчетность за 2019 год, в том числе заключение аудитора Общества по результатам проверки годовой бухгалтерской (финансовой) отчетности;',
+                                            size: '5.1 Мб'
+                                        })
+                                        @@include('template.document.html', {
+                                            type: 'xls',
+                                            name: 'годовой отчет Общества за 2019 год; отчет о заключенных Обществом в 2019 году сделках, в совершении которых имеется заинтересованность (в составе годового отчета Общества за 2019 год);',
+                                            size: '5.1 Мб'
+                                        })
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title">ГОДОВОЕ ОБЩЕЕ СОБРАНИЕ АКЦИОНЕРОВ 2018 г.</a>
+
+                                <div class="accordion-content" data-tab-content>
+                                    <div class="document">
+                                        @@include('template.document.html', {
+                                            type: 'zip',
+                                            name: '03.06.2020 Отчет об итогах голосования на ГОСА ПАО "Якутскэнерго" 02.06.2020',
+                                            size: '4.03 Мб'
+                                        })
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title">ГОДОВОЕ ОБЩЕЕ СОБРАНИЕ АКЦИОНЕРОВ 2017 г.</a>
+
+                                <div class="accordion-content" data-tab-content>
+
+                                    <div class="document">
+                                        @@include('template.document.html', {
+                                            type: 'file',
+                                            name: '07.05.2020 Перечень материалов ГОСА 2020 для акционеров',
+                                            size: '5.1 Мб'
+                                        })
+                                        @@include('template.document.html', {
+                                            type: 'pdf',
+                                            name: 'годовая бухгалтерская (финансовая) отчетность за 2019 год, в том числе заключение аудитора Общества по результатам проверки годовой бухгалтерской (финансовой) отчетности;',
+                                            size: '5.1 Мб'
+                                        })
+                                        @@include('template.document.html', {
+                                            type: 'xls',
+                                            name: 'годовой отчет Общества за 2019 год; отчет о заключенных Обществом в 2019 году сделках, в совершении которых имеется заинтересованность (в составе годового отчета Общества за 2019 год);',
+                                            size: '5.1 Мб'
+                                        })
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('template.footer.html')
+
+</body>
+</html>

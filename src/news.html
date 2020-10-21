@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    @@include('template.head.html', {
+        title: 'Новости'
+    })
+
+<body>
+
+    @@include('template.header.html')
+
+    <main>
+
+        <!-- Хлебные крошки -->
+        @@include('template.breadcrumbs.html', {
+            arr: [
+                { title: "Главная", link: './index.html' },
+                { title: "Новости", link: './news.html' }
+            ]
+        })
+
+        <!-- Заголовок страницы -->
+        @@include('template.page.title.html', {
+            title: 'Новости'
+        })
+
+        <!-- Навигация -->
+        @@include('template.page.nav.html', {
+            arr: [
+                { title: "Новости", link: './news.html', class: 'is-active' },
+                { title: "Объявления", link: '#', class: '' }
+            ]
+        })
+
+        <div class="page-selector">
+            <div class="grid-container">
+                <div class="selector">
+                    <div class="selector__text">
+                        Сортировка:
+                    </div>
+                    <div class="custom-select" style="width:200px;">
+                        <select>
+                            <option value="0">Выберите</option>
+                            <option value="1">Сначала свежие</option>
+                            <option value="2">Сначала старые</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content m-background-grey">
+            <div class="grid-container">
+                <div class="news">
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/600x300/" alt=""> -->
+                                <img src="img/news/post1.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    Якутскэнерго завершило капитальный ремонт системообразующей линии «Майя – Чурапча»
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/800x600/" alt=""> -->
+                                <img src="img/news/post2.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    График ремонтных работ энергетиков на период с 29 сентября по 12 октября
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/300x150/" alt=""> -->
+                                <img src="img/news/post3.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    Теплоэнергосервис подключает социально значимых потребителей к источникам централизованного теплоснабжения
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/800x600/" alt=""> -->
+                                <img src="img/news/post2.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    График ремонтных работ энергетиков на период с 29 сентября по 12 октября
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/300x150/" alt=""> -->
+                                <img src="img/news/post3.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    Теплоэнергосервис подключает социально значимых потребителей к источникам централизованного теплоснабжения
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="news.page.html" class="news-item__card">
+                            <div class="news-item__card-image">
+                                <!-- <img src="//via.placeholder.com/600x300/" alt=""> -->
+                                <img src="img/news/post1.png" alt="">
+                            </div>
+                            <div class="news-item__card-content">
+                                <div class="news-item__card-date">
+                                    28.09.2020
+                                </div>
+                                <div class="news-item__card-title">
+                                    Якутскэнерго завершило капитальный ремонт системообразующей линии «Майя – Чурапча»
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                @@include('template.main.more.html', {
+                    text: 'Загрузить ещё',
+                    link: 'news.html'
+                })
+
+            </div>
+        </div>
+
+    </main>
+
+    @@include('template.footer.html')
+
+</body>
+</html>

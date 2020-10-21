@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    @@include('template.head.html', {
+        title: 'О компании'
+    })
+
+<body>
+
+    @@include('template.header.html', {
+        name: 'Заголовок страницы'
+    })
+
+    <main>
+
+        <!-- Хлебные крошки -->
+        @@include('template.breadcrumbs.html', {
+            arr: [
+                { title: "Главная", link: './index.html' },
+                { title: "О компании", link: './about.html' }
+            ]
+        })
+
+        <!-- Заголовок страницы -->
+        @@include('template.page.title.html', {
+            title: 'О компании'
+        })
+
+        <!-- Навигация -->
+        @@include('template.page.nav.html', {
+            arr: [
+                { title: "О компании", link: './about.html', class: '' },
+                { title: "Руководство", link: './about.leadership.html', class: ''},
+                { title: "Вакансии", link: './about.vacancies.html', class: 'is-active' },
+                { title: "Реквизиты", link: './about.reqs.html', class: '' },
+                { title: "Контакты", link: './about.contacts.html', class: '' },
+                { title: "Обратная связь", link: './about.feedback.html', class: '' }
+            ]
+        })
+
+        <div class="page-content m-background-grey">
+            <div class="grid-container">
+                <div class="page-cards">
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell card-item large-4 medium-6 small-12">
+                            <div class="vac-card">
+                                <div class="vac-time">
+                                    28.09.2020
+                                </div>
+                                <a href="about.vacancies.page.html" class="vac-card__title">
+                                    Инженер 1-й кат. Сектора автоматизированных систем диспетчерского управл. УИТС Исполнительной дирекции ПАО "Якутскэнерго"
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cell card-item large-4 medium-6 small-12">
+                            <div class="vac-card">
+                                <div class="vac-time">
+                                    26.09.2020
+                                </div>
+                                <a href="about.vacancies.page.html" class="vac-card__title">
+                                    Инженер по контрольно- измерительным приборам и автоматике струк. подр. "ДЭС-3000 кВт п. Тикс , АО "Сахаэнерго".
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cell card-item large-4 medium-6 small-12">
+                            <div class="vac-card">
+                                <div class="vac-time">
+                                    28.09.2020
+                                </div>
+                                <a href="about.vacancies.page.html" class="vac-card__title">
+                                    Инженер 1-й кат. Сектора автоматизированных систем диспетчерского управл. УИТС Исполнительной дирекции ПАО "Якутскэнерго"
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cell card-item large-4 medium-6 small-12">
+                            <div class="vac-card">
+                                <div class="vac-time">
+                                    28.09.2020
+                                </div>
+                                <a href="about.vacancies.page.html" class="vac-card__title">
+                                    Инженер 1-й кат. Сектора автоматизированных систем диспетчерского управл. УИТС Исполнительной дирекции ПАО "Якутскэнерго"
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('template.footer.html')
+
+</body>
+</html>

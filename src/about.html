@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    @@include('template.head.html', {
+        title: 'О компании'
+    })
+
+<body>
+
+    @@include('template.header.html', {
+        name: 'Заголовок страницы'
+    })
+
+    <main>
+
+        <!-- Хлебные крошки -->
+        @@include('template.breadcrumbs.html', {
+            arr: [
+                { title: "Главная", link: './index.html' },
+                { title: "О компании", link: './about.html' }
+            ]
+        })
+
+        <!-- Заголовок страницы -->
+        @@include('template.page.title.html', {
+            title: 'О компании'
+        })
+
+        <!-- Навигация -->
+        @@include('template.page.nav.html', {
+            arr: [
+                { title: "О компании", link: './about.html', class: 'is-active' },
+                { title: "Руководство", link: './about.leadership.html', class: ''},
+                { title: "Вакансии", link: './about.vacancies.html', class: '' },
+                { title: "Реквизиты", link: './about.reqs.html', class: '' },
+                { title: "Контакты", link: './about.contacts.html', class: '' },
+                { title: "Обратная связь", link: './about.feedback.html', class: '' }
+            ]
+        })
+
+        <div class="page-content">
+            <div class="grid-container">
+                <div class="page-main">
+                    <div class="page-main__item">
+                        <h2 class="page-main__title">История ЯЭРК</h2>
+
+                        <div class="page-main__text">
+                            <p>
+                                ПАО «Якутскэнерго» занимает одно из первых мест в стране по площади обслуживания (территория республики составляет 1/5 часть России) и по протяженности ЛЭП различных классов напряжения, которая равна половине длины экватора (свыше 20 тыс. км).
+                            </p>
+
+                            <p>
+                                Кроме того, энергосистема Якутии обладает самым большим в стране количеством дизельных электростанций – 152 шт., 136 из которых объединены в дочернюю компанию АО «Сахаэнерго».
+                            </p>
+
+                            <p>
+                                Энергетики Якутии работают в сложнейших природно-климатических условиях: почти вся республика лежит в зоне вечной мерзлоты, толщина которой местами достигает 500 и более метров, а амплитуда колебаний температуры превышает 100 градусов – зимой воздух охлаждается до минус 60°C, а летом нагревается до плюс 40°C.
+                            </p>
+
+                            <p>
+                                ПАО «Якутскэнерго» осуществляет деятельность во всех четырех энергорайонах республики: Центральном, Западном, Южно-Якутском, Северном.
+                            </p>
+
+                            <p>
+                                На 1 января 2020 года установленная электрическая мощность объектов ПАО «Якутскэнерго» составляет 1 138,510 МВт, тепловая – 1 723,651 Гкал/ч.
+                            </p>
+
+                            <p>
+                                В состав ПАО «Якутскэнерго» входят Каскад Вилюйских ГЭС им. Е. Н. Батенчука, снабжающий электроэнергией Западную Якутию; Якутская ТЭЦ – первая тепловая станция энергосистемы, в 2017 году отметившая свое 80-летие. Якутская ГРЭС и введенная в эксплуатацию в ноябре 2017 года Якутская ГРЭС-2 являют собой электрическое «сердце» столицы республики и 10 прилегающих районов, где проживает более полумиллиона якутян, а также вместе с ЯТЭЦ и столичным теплоснабжающим предприятием обеспечивают тепловой энергией более 300 тысяч жителей Якутска.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="page-main__item">
+                        <h2 class="page-main__title">Деятельность компании</h2>
+
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell">
+                                <div class="grid-x grid-margin-x">
+                                    <div class="cell large-6 medium-6 small-12">
+                                        <div class="about-us__card-image __bg-orange">
+                                            <img src="//via.placeholder.com/532x300/" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell large-6 medium-6 small-12">
+                                        <div class="about-us__card-content">
+                                            <h3>Ремонт и обслуживание энергетического оборудования, обеспечение работоспособности энергосетей</h3>
+                                            <p>В настоящий момент в рамках программы по модернизации тепловых пунктов ЯТЭЦ энергетики производят замену трубчатых теплообменных аппаратов на пластинчатые, и осуществляют регулировку тепловых вводов на объектах г. Якутска.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="grid-x grid-margin-x">
+                                    <div class="cell large-6 medium-6 small-12">
+                                        <div class="about-us__card-image __bg-blue">
+                                            <img src="//via.placeholder.com/532x300/" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell large-6 medium-6 small-12">
+                                        <div class="about-us__card-content" style="margin-bottom: 0;">
+                                            <h3>Реализация отраслевых, научно-технических и инновационных программ</h3>
+                                            <p>В настоящий момент в рамках программы по модернизации тепловых пунктов ЯТЭЦ энергетики производят замену трубчатых теплообменных аппаратов на пластинчатые, и осуществляют регулировку тепловых вводов на объектах г. Якутска.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page-main__item">
+                        <h2 class="page-main__title">О компании</h2>
+
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell large-12 medium-12 small-12">
+                                <div class="about-us__block">
+
+                                    <div class="about-us__block-image">
+                                        <img src="//via.placeholder.com/1072x500/" alt="О компании">
+                                    </div>
+
+                                    <div class="about-us__block-content">
+                                        АО «ЯЭРК» - работа во благо населения города
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="cell large-12 medium-12 small-12 __mini-blocks">
+                                <div class="grid-x grid-margin-x">
+                                    <div class="cell large-4 medium-4 small-6 __mini-block">
+                                        <div class="about-us__block __mini __color-blue">
+
+                                            <div class="about-us__block-content">
+                                                143
+                                                <span>
+                                                    профессионала своего дела
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="cell large-4 medium-4 small-6 __mini-block">
+                                        <div class="about-us__block __mini __color-orange">
+
+                                            <div class="about-us__block-content">
+                                                540 км
+                                                <span>
+                                                    обслуживаемых энергосетей
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="cell large-4 medium-4 small-12 __mini-block">
+                                        <div class="about-us__block __mini __color-yellow">
+
+                                            <div class="about-us__block-content">
+                                                4 023
+                                                <span>
+                                                    значимая цифра предприятия
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('template.footer.html')
+
+</body>
+</html>

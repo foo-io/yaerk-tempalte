@@ -1,0 +1,75 @@
+<div class="grid-container">
+
+    @@include('template.main.title.html', {
+        title: 'Частые вопросы'
+    })
+
+    <div class="faq">
+        <div class="faq-item">
+            <a href="info.faq.html" class="faq-item__card">
+                <div class="faq-item__card-icon">
+                    <svg class="svg-faq-dims">
+                        <use xlink:href="./img/icons/sprite.svg#faq"></use>
+                    </svg>
+                </div>
+                <div class="faq-item__card-link">
+                    Как подключить счётчик электричества в квартире?
+                </div>
+            </a>
+        </div>
+        <div class="faq-item">
+            <a href="info.faq.html" class="faq-item__card">
+                <div class="faq-item__card-icon">
+                    <svg class="svg-faq-dims">
+                        <use xlink:href="./img/icons/sprite.svg#faq"></use>
+                    </svg>
+                </div>
+                <div class="faq-item__card-link">
+                    Сколько стоит подключение частного дома?
+                </div>
+            </a>
+        </div>
+        <div class="faq-item">
+            <a href="info.faq.html" class="faq-item__card">
+                <div class="faq-item__card-icon">
+                    <svg class="svg-faq-dims">
+                        <use xlink:href="./img/icons/sprite.svg#faq"></use>
+                    </svg>
+                </div>
+                <div class="faq-item__card-link">
+                    Куда обращаться для переделки разводки?
+                </div>
+            </a>
+        </div>
+        <div class="faq-item">
+            <a href="info.faq.html" class="faq-item__card">
+                <div class="faq-item__card-icon">
+                    <svg class="svg-faq-dims">
+                        <use xlink:href="./img/icons/sprite.svg#faq"></use>
+                    </svg>
+                </div>
+                <div class="faq-item__card-link">
+                    Какие действуют тарифы на услуги?
+                </div>
+            </a>
+        </div>
+        <div class="faq-item">
+            <div class="faq-item__card faq-item__information">
+                <div class="faq-item__card-icon">
+                    <svg class="svg-chat-dims">
+                        <use xlink:href="./img/icons/sprite.svg#chat"></use>
+                    </svg>
+                </div>
+                <div class="faq-item__card-link">
+                    Хотите обсудить вопрос или есть предложение? Вы можете связаться с нами через <a href="#">форму обратной связи</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('template.main.more.html', {
+        text: 'Все вопросы',
+        link: 'info.faq.html'
+    })
+
+</div>

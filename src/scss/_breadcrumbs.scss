@@ -1,0 +1,35 @@
+.breadcrumbs {
+    padding: 16px 0 16px 0;
+    margin: 0;
+    overflow-x: auto;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        white-space: nowrap;
+        color: #99A3B6;
+        transition: color .2s ease-out;
+
+        &:hover {
+            color: $o;
+            text-decoration: none;
+        }
+    }
+    li {
+        text-transform: none;
+
+        &:not(:last-child)::after {
+            position: relative;
+            margin: 0 6px;
+            opacity: 1;
+            content: "-";
+            color: #99A3B6;
+        }
+    }
+
+}

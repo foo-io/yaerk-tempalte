@@ -1,0 +1,184 @@
+footer {
+    background: $b;
+    color: #FFF;
+    padding: 64px 0;
+
+    @media screen and (max-width: 39.99875rem) {
+        padding: 15px 0;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+.footer {
+
+    &__menu {
+        &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-bottom: 16px;
+        }
+        &-list {
+            list-style: none;
+            margin: 0;
+
+            li {
+                margin-bottom: 8px;
+                a {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    transition: color .2s ease-out;
+
+                    &:hover {
+                        color: $o;
+                    }
+                }
+            }
+        }
+    }
+    &__line {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        width: fit-content;
+
+        img {
+            margin-right: 16px;
+        }
+        &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            margin-bottom: 0;
+            transition: color .2s ease-out;
+        }
+        &:hover {
+            .footer__line-title {
+                color: $o;
+            }
+        }
+        @media screen and (max-width: 39.99875rem) {
+            margin-bottom: 24px;
+        }
+    }
+    &__search {
+        margin: 0;
+        margin-bottom: 43px;
+
+        @media screen and (max-width: 39.99875rem) {
+            margin-bottom: 24px;
+            margin-top: 15px;
+        }
+
+    }
+    &__contact {
+        margin-bottom: 46px;
+
+        h3 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+        &-item {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            flex-direction: column;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                font-size: 14px;
+                line-height: 24px;
+                color: #FFFFFF;
+
+                &:hover {
+                    color: #FFF;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.company {
+    border-top: 1px solid #005C96;
+    margin: 32px 0 0;
+    padding-top: 32px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #76B4DB;
+
+        a {
+            color: #76B4DB;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            align-items: center;
+            transition: all .2s ease-out;
+
+            .svg-platforma-dims {
+                fill: #76B4DB;
+                margin-left: 5px;
+                transition: all .2s ease-out;
+            }
+
+            &:hover {
+                color: $o;
+
+                .svg-platforma-dims {
+                    fill: $o;
+                }
+            }
+        }
+        @media screen and (max-width: 39.99875rem) {
+            margin-bottom: 16px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 39.99875rem) {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        justify-content: baseline;
+    }
+
+}
+
+.footer__mobile {
+    .mobile-menu__accordion {
+        margin: 0;
+    }
+}

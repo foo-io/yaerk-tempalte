@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    @@include('template.head.html', {
+        title: 'О компании'
+    })
+
+<body>
+
+    @@include('template.header.html')
+
+    <main>
+
+        <!-- Хлебные крошки -->
+        @@include('template.breadcrumbs.html', {
+            arr: [
+                { title: "Главная", link: './index.html' },
+                { title: "О компании", link: './about.html' }
+            ]
+        })
+
+        <!-- Заголовок страницы -->
+        @@include('template.page.title.html', {
+            title: 'О компании'
+        })
+
+        <!-- Навигация -->
+        @@include('template.page.nav.html', {
+            arr: [
+                { title: "О компании", link: './about.html', class: '' },
+                { title: "Руководство", link: './about.leadership.html', class: ''},
+                { title: "Вакансии", link: './about.vacancies.html', class: 'is-active' },
+                { title: "Реквизиты", link: './about.reqs.html', class: '' },
+                { title: "Контакты", link: './about.contacts.html', class: '' },
+                { title: "Обратная связь", link: './about.feedback.html', class: '' }
+            ]
+        })
+
+        <div class="page-content">
+            <div class="grid-container">
+                <div class="page-main">
+                    <div class="page-single">
+
+                        <!-- Вернуться -->
+                        @@include('template.goback.html', {
+                            link: 'about.vacancies.html'
+                        })
+
+                        @@include('template.news.title.html', {
+                            date: '28.09.2020',
+                            title: 'Инженер 1-й кат. Сектора автоматизированных систем диспетчерского управл. УИТС Исполнительной дирекции ПАО "Якутскэнерго"'
+                        })
+
+                        <table class="unstriped table-vacancies">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Общие сведения</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Должность</th>
+                                    <td>Инженер 1-й кат. Сектора автоматизированных систем диспетчерского управл. УИТС Исполнительной дирекции ПАО "Якутскэнерго"</td>
+                                </tr>
+                                <tr>
+                                    <th>Подразделение</th>
+                                    <td>Сектор автоматизированных систем диспетчерского управл. УИТС</td>
+                                </tr>
+                                <tr>
+                                    <th>Контакты для отправки резюме</th>
+                                    <td>Резюме направлять на эл. адрес: Sharapova-LK@yakutskenergo.ru; тел. 49-75-21</td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Условия работы</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Тип работы</th>
+                                    <td>Постоянная</td>
+                                </tr>
+                                <tr>
+                                    <th>Рабочий день</th>
+                                    <td>Полный</td>
+                                </tr>
+                                <tr>
+                                    <th>Зараб. плата</th>
+                                    <td>от 50 000 руб.</td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Должностные обязанности</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        Обеспечение диспетчерской и технологической связью и каналами телеинформации. Контроль оперативного обслуживания оборудования телемеханики, систем спутниковой и наземной радиосвязи. Эксплуатация и техническое обслуживание аппаратных комплексов центрального узла связи и телемеханики.
+                                        <br>
+                                        <br>
+                                        Навыки работы на уровне пользователя, в том числе MS Word, Excel, Power-Point, Visio, и на уровне системного администратора для служебных программ АСДУ
+                                        <br>
+                                        <br>
+                                        Стаж работы: Не менее 3 (трех ) лет в области связи, энергетики, IT.
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Требования к кандидатам</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Образования</th>
+                                    <td>Высшее техническое</td>
+                                </tr>
+                                <tr>
+                                    <th>Стаж работы</th>
+                                    <td>Стаж работы: Не менее 3 (трех ) лет в области связи, энергетики, IT.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        @@include('template.social.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('template.footer.html')
+
+</body>
+</html>

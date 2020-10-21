@@ -1,0 +1,47 @@
+.document {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        margin-bottom: 16px;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+
+        &-image {
+            margin-right: 18px;
+            max-width: fit-content;
+            width: 100%;
+        }
+        &-name {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #707D96;
+            margin-bottom: 12px;
+            margin-top: 6px;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flex;
+            display: inline-flex;
+        }
+        &-attrs {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 18px;
+            color: #99A3B6;
+        }
+        &-type {
+            span {
+                text-transform: uppercase;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+
+        }
+    }
+}

@@ -1,0 +1,45 @@
+<div class="grid-container">
+
+    @@include('template.main.title.html', {
+        title: 'Объявления'
+    })
+
+    <div class="notice">
+        <div class="notice-item __notice-orange">
+            <a href="#" class="notice-item__card">
+                <div class="notice-item__card-date">
+                    28.09.2020
+                </div>
+                <div class="notice-item__card-title">
+                    Дачным кооперативам г. Якутска необходимо срочно урегулировать вопросы задолженности за электроэнергию
+                </div>
+            </a>
+        </div>
+        <div class="notice-item">
+            <a href="#" class="notice-item__card">
+                <div class="notice-item__card-date">
+                    28.09.2020
+                </div>
+                <div class="notice-item__card-title">
+                    Якутскэнерго завершило капитальный ремонт системообразующей линии «Майя – Чурапча»
+                </div>
+            </a>
+        </div>
+        <div class="notice-item">
+            <a href="#" class="notice-item__card">
+                <div class="notice-item__card-date">
+                    28.09.2020
+                </div>
+                <div class="notice-item__card-title">
+                    График ремонтных работ энергетиков на период с 29 сентября по 12 октября
+                </div>
+            </a>
+        </div>
+    </div>
+
+    @@include('template.main.more.html', {
+        text: 'Все объявления',
+        link: '#'
+    })
+
+</div>

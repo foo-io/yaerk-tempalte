@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    @@include('template.head.html', {
+        title: 'Главная страница'
+    })
+
+<body>
+
+    @@include('template.header.html', {
+        name: 'Заголовок страницы'
+    })
+
+    <main class="m-background-grey">
+
+        <section class="main-slider">
+            @@include('template.slider.html')
+        </section>
+
+        <section class="main-news">
+            @@include('template.news.html')
+        </section>
+
+        <section class="main-notice">
+            @@include('template.notice.html')
+        </section>
+
+        <section class="main-faq">
+            @@include('template.faq.html')
+        </section>
+
+        <section class="main-partners">
+            @@include('template.partners.html')
+        </section>
+
+    </main>
+
+    @@include('template.footer.html')
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<div class="page-navigation">
+    <div class="grid-container">
+
+        <ul class="menu grid-x grid-margin-x">
+            @@for (let i = 0; i < arr.length; i++) {
+                <li class="`+arr[i]['class']+`"><a href="`+arr[i]['link']+`">`+arr[i]['title']+`</a></li>
+            }
+        </ul>
+
+    </div>
+</div>

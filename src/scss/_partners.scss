@@ -1,0 +1,45 @@
+.main-partners {
+    .cell {
+
+        @media screen and (max-width: 39.99875em) {
+            margin-bottom: 16px;
+        }
+    }
+
+    .partner {
+        &__image {
+            margin-bottom: 14px;
+
+            @media screen and (max-width: 39.99875em) {
+                img {
+                    max-width: 64px;
+                }
+            }
+        }
+        &__name {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #767B95;
+            transition: color .2s ease-out;
+            
+            @media screen and (max-width: 39.99875em) {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+
+        &:hover {
+            .partner__name {
+                color: $o;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 39.99875em) {
+    .small-12-important {
+        width: 100% !important;
+    }
+}
